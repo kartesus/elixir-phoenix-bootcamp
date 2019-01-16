@@ -1,0 +1,12 @@
+<h5><%= @topic.title %></h5>
+
+<div class="input-field">
+  <textarea class="materialize-textarea"></textarea>
+  <button class="btn" id="addComment">Add Comment</button>
+</div>
+
+<ul class="collection"></ul>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => Comments(<%= @topic.id %>) )
+</script>
